@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+.connectconatiner{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1E1E1E;
+    border-top: 1px solid rgb(67, 67, 67);
+}
+.connecttext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-size: 3rem;
+    font-family: 'Kaushan Script', cursive;
+    padding: 1%;
+    padding-bottom: 5%;
+}
+.c-maincontent{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.socialconatiner{
+    width: 40%;
+    height: 60vh;
+}
+.socialconatiner h2{
+   color: grey;
+   padding: 0 10%;
+   font-weight: bold;
+}
+.socialconatiner h2 span{
+   color: rgb(255, 255, 255);
+   font-weight: 100;
+}
+.minitabcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    padding: 0 5%;
+}
+.minitabcontainer a{
+    width: 20%;
+    margin: 1%;
+}    
+.minitab{
+    width: 100%;
+    height: 20vh;
+    background-color: #262626;
+    box-shadow: 0 2px 5px rgb(4, 4, 4);
+    margin-top: 5%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+.messageconatiner{
+    width: 60%;
+    height: 60vh;
+    border-left: 2px dotted grey;
+}
+.messageconatiner form{
+   padding: 5% 25%;
+   
+}
+.area input{
+   width: 80%;
+   height: 5vh;
+   margin: 1%;
+   background-color: #262626;
+   border: 0.5px solid rgb(9, 9, 9);
+   border-radius: 5px;
+   color: white;
+   padding: 0 30px;
+}
+.messageconatiner form textarea{
+   width: 80%;
+   height: 20vh;
+   margin: 1%;
+   background-color: #262626;
+   border: 0.5px solid rgb(9, 9, 9);
+   border-radius: 5px;
+   padding: 0px 30px;
+   color: white;
+   resize: none;
+}
+.formbutton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formbutton input{
+    width: 20%;
+    height: 5vh;
+    margin: 1%;
+    font-size: large;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.formbutton input:hover{
+    background-color: white;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.area{
+    display: flex;
+}
+.formicon{
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 2vh;
+    left: 4vh;
+}
+   
+
+.linkbox:hover{
+    box-shadow: 0 0 10px #0A66C2;
+}
+.instabox:hover{
+    box-shadow: 0 0 10px #d62976;
+}
+.discordbox:hover{
+    box-shadow: 0 0 10px #7289d9;
+}
+.githubbox:hover{
+    box-shadow: 0 0 10px #ffffff;
+}
+.twitterbox:hover{
+    box-shadow: 0 0 10px #00d0ff;
+}
+.behancebox:hover{
+    box-shadow: 0 0 10px #ff6200;
+}
+
+
+@media screen and (max-width: 900px){
+    .c-maincontent{
+        display: block;
+    }
+    .socialconatiner{
+        width: 100%;
+        height: 80vh;
+    }
+    .minitab{
+        width: 45px;
+        height: 45px;
+    }
+    .icon{
+        width: 20px;
+        height: 20px;
+    }
+    .socialconatiner{
+        width: 100%;
+        height: 25vh;
+    }
+    .messageconatiner{
+        width: 100%;
+        height: 50vh;
+        border-left: none;
+    }
+    .messageconatiner form{
+        padding: 0% 0%;
+        
+     }
+     .area input{
+        padding: 0 20px;
+        margin-left: 5%;
+     }
+     .messageconatiner form textarea{
+        padding: 0px 20px;
+        margin-left: 5%;
+     }
+     .formicon{
+      display: none;
+    }
+    .socialconatiner h2{
+        text-align: center;
+     }
+     .minitabcontainer{
+        gap: 5%;
+    }
+    .minitabcontainer a{
+       width: 10%;
+    }  
+    ::selection{
+        color: none;
+        background: none;
+      }
+}

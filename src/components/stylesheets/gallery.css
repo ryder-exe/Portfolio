@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+.galleryconatiner{
+    width: 100%;
+    height: 100vh;
+}
+.project-contain{
+    width: 100%;
+    height: 100vh;
+}
+.gallery-contain{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12rem;
+    z-index: 3;
+    font-weight: bold;
+    color: rgb(255, 0, 93);
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 0 0 5px rgb(14, 14, 14);
+}
+.galleryNavbar{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0 5%;
+    color: white;
+}
+.g-logoholder{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5rem;
+}
+.g-itemholder ul{
+    display: flex;
+    gap: 2.5rem;
+}
+.g-itemholder{
+    padding: 0 15%;
+}
+.g-itemholder ul li{
+    list-style: none;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.g-itemholder ul li:hover{
+    transform: translateY(-10px);
+}
+.galleryinnercon{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fix{
+    position: fixed;
+    background-color: white;
+    color: black;
+    transition: 0.8s;
+    z-index: 3;
+}
+.g-innercontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    min-height: 100vh;
+    background-color: rgb(43, 43, 43);
+    gap: 5%;
+}
+.leftshow{
+    width: 30%;
+    min-height: 70vh;
+    background-image: url('../../assests/20230126_160944.jpg');
+    background-size: cover;
+    -webkit-filter: grayscale(100%);
+    transition: 0.3s;
+}
+.leftshow:hover{
+    -webkit-filter: grayscale(0%);
+    transform: scale(1.09);
+    z-index: 2;
+}
+.rightshow{
+    width: 50%;
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.rightshow img{
+    width: 250px;
+    height: 300px;
+    filter: grayscale(100%);
+    transition: 0.3s;
+    
+}
+.rightshow img:hover{
+    transform: scale(1.09);
+    filter: grayscale(0%);
+    z-index: 2;
+}
+.follow{
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    padding-right: 30%;
+    color: grey;
+}
+.glogo{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 0.5vh;
+    color: white;
+}
+.logof{
+    display: none;
+}
+.p{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.t{
+    color: black;
+}
+@media screen and (max-width: 900px){
+    .g-innercontent{
+        display: block;
+    }
+    .leftshow{
+        width: 100%;
+        display: none;
+    }
+    .rightshow{
+        width: 100%;
+    }
+    .rightshow img{
+        width: 300px;
+        height: 400px; 
+        padding: 2% 8%;   
+    }
+    .follow{
+        font-size: 0.8rem;
+        padding: 5%;
+        padding-right: 20%;
+    }
+    .gallery-contain{
+        font-size: 7rem;
+    }
+    .g-itemholder{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        left: 0;
+        height: 100vh;
+        top: -100vh;
+        transition: 0.5s;
+    }
+    .g-itemholder ul{
+        display: block;
+        text-align: center;
+        
+    }
+    .g-itemholder ul li{
+        padding: 10%;
+        padding-right: 50%;
+        color: black;
+    }
+    .showlogo{
+        padding-right: 15%;
+        font-size: 2rem;
+    }
+    .cancellogo{
+        font-size: 3rem;
+        color: black;
+        position: absolute;
+        top: 2%;
+        left: 60%;
+    }
+    .logof{
+        display: block;
+    }
+    .p{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    ::selection{
+        color: none;
+        background: none;
+    }
+}

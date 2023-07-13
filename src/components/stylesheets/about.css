@@ -1,0 +1,230 @@
+.aboutconatiner{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1E1E1E;
+}
+.resumeholder{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    position: relative;
+    top: 0.8vh;
+}
+.resume{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 10%;
+    height: 5vh;
+    border: 2px solid rgb(232, 232, 232);
+    border-radius: 30px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: bold;
+    margin-right: 2%;
+}
+.resume:hover{
+   background-color: white;
+   color: black;
+}
+.aboutlowerconatiner{
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 40vh 40vh 40vh ;
+}
+.box{
+    width: 100%;
+    height: 40vh;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1 img{
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 0.5;
+}
+.box1 img:hover{
+    filter: grayscale(0%);
+}
+.box2{
+    width: 100%;
+    height: 40vh;
+    padding: 2% 5%;
+}
+.box2 h2{
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+}
+.box2 p{
+  font-weight: bold;
+  color: rgb(165, 165, 165);
+  font-size: 0.8rem;
+}
+
+.box3{
+    width: 100%;
+    height: 40vh;
+    border-left: 3px dotted rgb(113, 113, 113);
+}
+.box3 h2{
+    padding: 5% 5%;
+    color: white;
+}
+.edudetails{
+    padding: 5% 5%;
+    color: white;
+}
+.edudetails span{
+    color: gray;
+    font-weight: bold;
+    font-style: italic;
+    padding:0 10px;
+}
+.box4{
+    width: 100%;
+}
+.box4 h2{
+    color: white;
+    padding: 5% 20%;
+}
+.interestholder{
+    padding: 0 10%;
+}
+.interestholder ul li{
+    color: rgb(165, 165, 165);
+}
+.box5{
+    border-left: 3px dotted rgb(113, 113, 113);
+}
+.box5 h2{
+    padding:  0 5%;
+    color: white;
+}
+.techholder{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5%;
+    gap: 1%;
+}
+.minibox{
+    width: 20%;
+    height: 4vh;
+    background-color: #262626;
+    box-shadow: 0 2px 5px rgb(4, 4, 4);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 1%;
+}
+.minibox:hover{
+    background-color: #313131;
+}
+.box6{
+    border-left: 3px dotted rgb(113, 113, 113);
+    margin-top: 5%;
+}
+.box6 h2{
+    padding: 0 5%;
+    color: white;
+}
+.weinnerholder{
+    height: 6vh;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    padding: 0 5%;
+
+}
+.weinnerholder h4{
+    color: white;
+}
+.weinnerholder span{
+    color: grey;
+    padding-right: 5% ;
+}
+
+
+
+
+
+@media screen and (max-width: 900px)
+{   
+    .aboutconatiner{
+        width: 100%;
+        min-height: 240vh;
+    }
+    .aboutlowerconatiner{
+        display: block;
+    }
+    .resume{
+        width: 30%;
+    }
+    .box2{
+        width: 100%;
+        height: 40vh;
+        padding: 2% 0%;
+    }
+    .box2 h2{
+        font-weight: bold;
+        font-size: 2rem;
+        color: white;
+        padding: 0 5%;
+      }
+      .box2 p{
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    .mo-2{
+        position: relative;
+        top: 70vh;
+    }
+    .box3{
+        border-left: none;
+        height: 35vh;
+    }
+    .box4{
+        height: 35vh;
+    }
+    .box4 h2{
+        padding: 5%;
+    }
+    .interestholder{
+        padding: 0 0%;
+    }
+    .techholder{
+        padding: 0 0px;
+        gap: 0%;
+    }
+    .minibox{
+        margin-left: 2%;
+        width: 30%;
+    }
+    .box5{
+        border-left: none;
+        height: 35vh;
+    }
+    .box6{
+        border-left: none;
+    }
+    ::selection{
+        color: none;
+        background: none;
+      }
+}
